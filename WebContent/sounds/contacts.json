@@ -1,0 +1,278 @@
+[
+  {
+    "name": "ChM1_Copains",
+    "users": [
+      {
+        "displayName": "Nicolas Le Mero",
+        "id": "n.le.mero@fr.ibm.com"
+      },
+      {
+        "displayName": "Pascale Druon-Dheilly",
+        "id": "pascale.druon@fr.ibm.com"
+      },
+      {
+        "displayName": "Jean Marc Millot",
+        "id": "MILLOT@fr.ibm.com"
+      },
+      {
+        "displayName": "Philippe Bourgeois",
+        "id": "pbourgeois@fr.ibm.com"
+      }
+    ]
+  },
+  {
+    "name": "ChM2_IIC_Paris",
+    "users": [
+      {
+        "displayName": "Sebastien Gautier",
+        "id": "sebastien.gautier@fr.ibm.com"
+      },
+      {
+        "displayName": "Zo Rakoto-Ravalontsalama",
+        "id": "zo.rakoto@fr.ibm.com"
+      },
+      {
+        "displayName": "Christophe Malet",
+        "id": "chmalet@fr.ibm.com"
+      },
+      {
+        "displayName": "Fabrizio Danusso",
+        "id": "f.danusso@fr.ibm.com"
+      },
+      {
+        "displayName": "Leonard Rania",
+        "id": "leonard.rania@fr.ibm.com"
+      },
+      {
+        "displayName": "Tanguy Moutte",
+        "id": "Tanguy.Moutte@ibm.com"
+      },
+      {
+        "displayName": "Xavier Rey-Robert",
+        "id": "REYROBERT@fr.ibm.com"
+      },
+      {
+        "displayName": "Lionel Rochet",
+        "id": "LROCHET@fr.ibm.com"
+      },
+      {
+        "displayName": "Amine Atbane",
+        "id": "Amine.Atbane@ibm.com"
+      }
+    ]
+  },
+  {
+    "name": "ChM8_Other_IBM",
+    "users": [
+      {
+        "displayName": "Debbie Nurkin",
+        "id": "dnurkin@us.ibm.com"
+      },
+      {
+        "displayName": "Simon Price",
+        "id": "PRICESI@uk.ibm.com"
+      }
+    ]
+  },
+  {
+    "name": "ChM7_Divers_BCL",
+    "users": [
+      {
+        "displayName": "Dina Russo",
+        "id": "DINA.RUSSO@fr.ibm.com"
+      },
+      {
+        "displayName": "Virginie Mangin",
+        "id": "virginie.mangin@fr.ibm.com"
+      },
+      {
+        "displayName": "Alexandre Peyronnet",
+        "id": "apeyronnet@fr.ibm.com"
+      },
+      {
+        "displayName": "Dominique Willot",
+        "id": "dominique_willot@fr.ibm.com"
+      },
+      {
+        "displayName": "Olivier Jouannic",
+        "id": "ojouannic@fr.ibm.com"
+      },
+      {
+        "displayName": "Patrick Dimpre",
+        "id": "patrick_dimpre@fr.ibm.com"
+      },
+      {
+        "displayName": "Stephane Coche",
+        "id": "s.coche@fr.ibm.com"
+      }
+    ]
+  },
+  {
+    "name": "ChM4_IDR_BCL_NICE",
+    "users": [
+      {
+        "displayName": "Laurent Vincent",
+        "id": "Laurent_Vincent@fr.ibm.com"
+      },
+      {
+        "displayName": "Remy Masson",
+        "id": "Remy.Masson@ibm.com"
+      },
+      {
+        "displayName": "Philippe Comte",
+        "id": "philippe.comte@fr.ibm.com"
+      },
+      {
+        "displayName": "Christel Beltran",
+        "id": "Christel_Beltran@fr.ibm.com"
+      },
+      {
+        "displayName": "Riad Schoucair",
+        "id": "r.schoucair@fr.ibm.com"
+      },
+      {
+        "displayName": "Philippe Thomas",
+        "id": "ph_thomas@fr.ibm.com"
+      },
+      {
+        "displayName": "Philippe Gregoire",
+        "id": "philippe.gregoire@fr.ibm.com"
+      },
+      {
+        "displayName": "Jean-Luc Collet",
+        "id": "jean-luc.Collet@fr.ibm.com"
+      },
+      {
+        "displayName": "Dimitrios Nitsopoulos",
+        "id": "nitsopoulos@de.ibm.com"
+      },
+      {
+        "displayName": "Alain Airom",
+        "id": "alain.airom@fr.ibm.com"
+      },
+      {
+        "displayName": "Valerie Le Roy",
+        "id": "LEROYV@fr.ibm.com"
+      }
+    ]
+  },
+  {
+    "name": "ChM3_DBG_Managers",
+    "users": [
+      {
+        "displayName": "Isabelle Tisserand",
+        "id": "tisserand_isabelle@fr.ibm.com"
+      },
+      {
+        "displayName": "Elisabeth Majkrzak",
+        "id": "majkrzak@fr.ibm.com"
+      },
+      {
+        "displayName": "Marguerite Michelot-Burger",
+        "id": "mmichelot@fr.ibm.com"
+      },
+      {
+        "displayName": "Isabelle Rabbione",
+        "id": "isarabbione@fr.ibm.com"
+      },
+      {
+        "displayName": "Caroline Mathis",
+        "id": "caroline.mathis@fr.ibm.com"
+      },
+      {
+        "displayName": "Bruno Mazeron",
+        "id": "bruno.mazeron@fr.ibm.com"
+      },
+      {
+        "displayName": "Sabrina Shayamalia",
+        "id": "Sabrina.Shayamalia@ibm.com"
+      },
+      {
+        "displayName": "Armelle Dixneuf",
+        "id": "armelle_dixneuf@fr.ibm.com"
+      },
+      {
+        "displayName": "Antoine Jeanpierre",
+        "id": "ajeanpierre@fr.ibm.com"
+      },
+      {
+        "displayName": "Sandra Calabre",
+        "id": "s_calabre@fr.ibm.com"
+      }
+    ]
+  },
+  {
+    "name": "ChM5_DBG_BCL",
+    "users": [
+      {
+        "displayName": "Gilles Oliveira",
+        "id": "gilles_oliveira@fr.ibm.com"
+      },
+      {
+        "displayName": "Anne Marie Le Gall",
+        "id": "am_legall@fr.ibm.com"
+      },
+      {
+        "displayName": "Stephane Bouvry",
+        "id": "BOUVRY@fr.ibm.com"
+      },
+      {
+        "displayName": "Mahjouba Azzaoui",
+        "id": "AZZAOUI@fr.ibm.com"
+      },
+      {
+        "displayName": "Berengere Promerat",
+        "id": "berengere@fr.ibm.com"
+      },
+      {
+        "displayName": "Nicolas Fouquet-Lapar",
+        "id": "Nicolas_Fouquet-Lapar@fr.ibm.com"
+      },
+      {
+        "displayName": "Jean-Luc Zamord",
+        "id": "Jean-Luc.Zamord@ie.ibm.com"
+      },
+      {
+        "displayName": "Florence Marcel",
+        "id": "florence_marcel@fr.ibm.com"
+      }
+    ]
+  },
+  {
+    "name": "ChM6_MKT_TEC",
+    "users": [
+      {
+        "displayName": "Jean-Christophe Puyon",
+        "id": "PUYON@fr.ibm.com"
+      },
+      {
+        "displayName": "Christine Wahart",
+        "id": "WAHART@fr.ibm.com"
+      },
+      {
+        "displayName": "Pascal Thery",
+        "id": "pthery@fr.ibm.com"
+      },
+      {
+        "displayName": "Sandrine Jezequel",
+        "id": "sandrine_jezequel@fr.ibm.com"
+      },
+      {
+        "displayName": "Magali Charbonnier",
+        "id": "magali.charbonnier@fr.ibm.com"
+      },
+      {
+        "displayName": "Ramona Boroianu",
+        "id": "ramona.boroianu@ro.ibm.com"
+      },
+      {
+        "displayName": "Isabelle Ulrich",
+        "id": "Isabelle.Ulrich1@ibm.com"
+      },
+      {
+        "displayName": "Gregory Tripp",
+        "id": "Gregory.Tripp@ibm.com"
+      }
+    ]
+  }
+]

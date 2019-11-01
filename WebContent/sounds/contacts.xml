@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<imClientConfig buddylist-version="1.0" external-mod="" lastUpdated="1572353387315" product="Sametime" server-mod="" version="7.5">
+  <communities>
+    <community alwaysEditActiveText="true" alwaysEditAwayText="true" alwaysEditDndText="true" authServerUrl="" authType="SAML" autoAwayTimeout="20" availWhenUnlocked="true" cloud="false" editable="" email="" host="messaging.ibm.com" iconIsUserSpecified="false" iconPath="" id="st0123456789" internetFilter="" isAutoActiveEnabled="true" isAutoAwayEnabled="true" isAutoAwayTimeoutEnabled="true" keepAliveInterval="60" loginAtStartup="true" loginByToken="false" managed="false" name="messaging.ibm.com" partnerIdType="" port="1533" primry="false" providerId="Sametime" readNotesCanonicalSetting="false" removable="false" resolveLivenames="false" samlautologin="false" samllogintype="Form" samlpasswordtag="" samlsubmittag="" samlusernametag="" savePassword="true" sendKeepAlive="true" useCustomTextForAutoAway="false" useGlobalConnSettings="true" useOsPass="false" useServerForLookup="true" userid="chmalet@fr.ibm.com" username="chmalet@fr.ibm.com">
+      <connection connectionType="direct" proxyHost="" proxyPort="" proxyResolvesLocally="false" proxyUserName="" tokenHostUrl="" transport=""/>
+      <statusTexts>
+        <activeText>Je suis disponible...avec modération</activeText>
+        <activeText>Je suis disponible surtout sur Slack et avec modération</activeText>
+        <activeText>[G&apos;Ｉ ａｍ ａｖａｉｌａｂｌｅİı｜]</activeText>
+        <activeText>Je suis disponible</activeText>
+        <activeText>I am available - Avec modération...</activeText>
+        <activeText>I am available</activeText>
+        <awayText>[G&apos;Ｉ ａｍ ａｗａｙ ｆｒｏｍ ｍｙ ｃｏｍｐｕｔｅｒ ｎｏｗİı｜]</awayText>
+        <awayText>Je ne suis pas à mon poste pour l&apos;instant</awayText>
+        <awayText>I am away from my computer now</awayText>
+        <awayText>n</awayText>
+        <inMtgText>May not be available for chat now, in a meeting</inMtgText>
+        <inMtgText>IIC Bi-Weekly meeting</inMtgText>
+        <inMtgText>[G&apos;Ｉ ａｍ ｉｎ ａ ｍｅｅｔｉｎｇİı｜]</inMtgText>
+        <inMtgText>Weekly Team Meeting</inMtgText>
+        <inMtgText>I am in a meeting</inMtgText>
+        <inMtgText>Can&apos;t chat now, in a meeting</inMtgText>
+        <dndText>Please do not disturb me</dndText>
+        <dndText>Attending Maas 360 Adavnced Workshop</dndText>
+        <dndText>Complex Stuff In Progress !!</dndText>
+        <dndText>Speaker POC ILMT</dndText>
+        <dndText>IIC Meeting</dndText>
+        <dndText>Lunch Break</dndText>
+        <idleText>Je ne suis pas à mon poste pour l&apos;instant</idleText>
+        <idleText>I am away from my computer now</idleText>
+        <idleText>Je suis disponible  (avec modération)</idleText>
+        <idleText>May not be available for chat now, in a meeting</idleText>
+        <idleText>Please do not disturb me</idleText>
+        <idleText>[G&apos;Ｉ ａｍ ａｗａｙ ｆｒｏｍ ｍｙ ｃｏｍｐｕｔｅｒ ｎｏｗİı｜]</idleText>
+        <lockText>[G&apos;Ｉ ａｍ ａｗａｙ ｆｒｏｍ ｍｙ ｃｏｍｐｕｔｅｒ ｎｏｗİı｜]</lockText>
+        <lockText>Je ne suis pas à mon poste pour l&apos;instant</lockText>
+        <lockText>I am away from my computer now</lockText>
+      </statusTexts>
+      <service-mapping impl="com.ibm.collaboration.realtime.directory.bluepages.BluePagesDirectoryFactory" type="com.ibm.collaboration.realtime.contacts.search.DirectoryServiceFactory"/>
+    </community>
+  </communities>
+  <contactList>
+    <group expanded="true" name="ChM1_Copains" type="private">
+      <user communityId="st0123456789" displayName="Nicolas Le Mero" id="n.le.mero@fr.ibm.com" lastChat="1570003883386"/>
+      <user communityId="st0123456789" displayName="Pascale Druon-Dheilly" id="pascale.druon@fr.ibm.com" lastChat="1553783912307"/>
+      <user communityId="st0123456789" displayName="Jean Marc Millot" id="MILLOT@fr.ibm.com" lastChat="1572011414702"/>
+      <user communityId="st0123456789" displayName="Philippe Bourgeois" id="pbourgeois@fr.ibm.com" lastChat="1571066127689"/>
+    </group>
+    <group expanded="true" name="ChM2_IIC_Paris" type="private">
+      <user communityId="st0123456789" displayName="Sebastien Gautier" id="sebastien.gautier@fr.ibm.com" lastChat="1572345403822"/>
+      <user communityId="st0123456789" displayName="Zo Rakoto-Ravalontsalama" id="zo.rakoto@fr.ibm.com" lastChat="1571825692492"/>
+      <user communityId="st0123456789" displayName="Christophe Malet" id="chmalet@fr.ibm.com" lastChat="1556112557863"/>
+      <user communityId="st0123456789" displayName="Fabrizio Danusso" id="f.danusso@fr.ibm.com" lastChat="1572253702765"/>
+      <user communityId="st0123456789" displayName="Leonard Rania" id="leonard.rania@fr.ibm.com" lastChat="1571238935048"/>
+      <user communityId="st0123456789" displayName="Tanguy Moutte" id="Tanguy.Moutte@ibm.com" lastChat="1570443370675"/>
+      <user communityId="st0123456789" displayName="Xavier Rey-Robert" id="REYROBERT@fr.ibm.com" lastChat="1553252789603"/>
+      <user communityId="st0123456789" displayName="Lionel Rochet" id="LROCHET@fr.ibm.com" lastChat="1569318235983"/>
+      <user communityId="st0123456789" displayName="Amine Atbane" id="Amine.Atbane@ibm.com" lastChat="1551697690854"/>
+    </group>
+    <group expanded="true" name="ChM8_Other_IBM" type="private">
+      <user communityId="st0123456789" displayName="Debbie Nurkin" id="dnurkin@us.ibm.com" lastChat="1552923350431"/>
+      <user communityId="st0123456789" displayName="Simon Price" id="PRICESI@uk.ibm.com" lastChat="1572271689196"/>
+    </group>
+    <group expanded="true" name="ChM7_Divers_BCL" type="private">
+      <user communityId="st0123456789" displayName="Dina Russo" id="DINA.RUSSO@fr.ibm.com" lastChat="1570550877610"/>
+      <user communityId="st0123456789" displayName="Virginie Mangin" id="virginie.mangin@fr.ibm.com" lastChat="1571066407010"/>
+      <user communityId="st0123456789" displayName="Alexandre Peyronnet" id="apeyronnet@fr.ibm.com" lastChat="1570633914004"/>
+      <user communityId="st0123456789" displayName="Dominique Willot" id="dominique_willot@fr.ibm.com" lastChat="1554362448201"/>
+      <user communityId="st0123456789" displayName="Olivier Jouannic" id="ojouannic@fr.ibm.com" lastChat="1564394253331"/>
+      <user communityId="st0123456789" displayName="Patrick Dimpre" id="patrick_dimpre@fr.ibm.com" lastChat="1570693117452"/>
+      <user communityId="st0123456789" displayName="Stephane Coche" id="s.coche@fr.ibm.com"/>
+    </group>
+    <group expanded="true" name="ChM4_IDR_BCL_NICE" type="private">
+      <user communityId="st0123456789" displayName="Laurent Vincent" id="Laurent_Vincent@fr.ibm.com" lastChat="1569594479988"/>
+      <user communityId="st0123456789" displayName="Remy Masson" id="Remy.Masson@ibm.com" lastChat="1519901154048"/>
+      <user communityId="st0123456789" displayName="Philippe Comte" id="philippe.comte@fr.ibm.com" lastChat="1571156315974"/>
+      <user communityId="st0123456789" displayName="Christel Beltran" id="Christel_Beltran@fr.ibm.com" lastChat="1568822357062"/>
+      <user communityId="st0123456789" displayName="Riad Schoucair" id="r.schoucair@fr.ibm.com" lastChat="1572010603730"/>
+      <user communityId="st0123456789" displayName="Philippe Thomas" id="ph_thomas@fr.ibm.com" lastChat="1570780625904"/>
+      <user communityId="st0123456789" displayName="Philippe Gregoire" id="philippe.gregoire@fr.ibm.com" lastChat="1570633094871"/>
+      <user communityId="st0123456789" displayName="Jean-Luc Collet" id="jean-luc.Collet@fr.ibm.com" lastChat="1569571102234"/>
+      <user communityId="st0123456789" displayName="Dimitrios Nitsopoulos" id="nitsopoulos@de.ibm.com" lastChat="1569598777516"/>
+      <user communityId="st0123456789" displayName="Alain Airom" id="alain.airom@fr.ibm.com"/>
+      <user communityId="st0123456789" displayName="Valerie Le Roy" id="LEROYV@fr.ibm.com" lastChat="1570194640403"/>
+    </group>
+    <group expanded="true" name="ChM3_DBG_Managers" type="private">
+      <user communityId="st0123456789" displayName="Isabelle Tisserand" id="tisserand_isabelle@fr.ibm.com" lastChat="1561647511361"/>
+      <user communityId="st0123456789" displayName="Elisabeth Majkrzak" id="majkrzak@fr.ibm.com" lastChat="1572256510804"/>
+      <user communityId="st0123456789" displayName="Marguerite Michelot-Burger" id="mmichelot@fr.ibm.com" lastChat="1571067743600"/>
+      <user communityId="st0123456789" displayName="Isabelle Rabbione" id="isarabbione@fr.ibm.com" lastChat="1572257152130"/>
+      <user communityId="st0123456789" displayName="Caroline Mathis" id="caroline.mathis@fr.ibm.com"/>
+      <user communityId="st0123456789" displayName="Bruno Mazeron" id="bruno.mazeron@fr.ibm.com" lastChat="1572256871099"/>
+      <user communityId="st0123456789" displayName="Sabrina Shayamalia" id="Sabrina.Shayamalia@ibm.com" lastChat="1570008364598"/>
+      <user communityId="st0123456789" displayName="Armelle Dixneuf" id="armelle_dixneuf@fr.ibm.com"/>
+      <user communityId="st0123456789" displayName="Antoine Jeanpierre" id="ajeanpierre@fr.ibm.com" lastChat="1572256243827"/>
+      <user communityId="st0123456789" displayName="Sandra Calabre" id="s_calabre@fr.ibm.com"/>
+    </group>
+    <group expanded="true" name="ChM5_DBG_BCL" type="private">
+      <user communityId="st0123456789" displayName="Gilles Oliveira" id="gilles_oliveira@fr.ibm.com" lastChat="1571919270667"/>
+      <user communityId="st0123456789" displayName="Anne Marie Le Gall" id="am_legall@fr.ibm.com" lastChat="1554825819425"/>
+      <user communityId="st0123456789" displayName="Stephane Bouvry" id="BOUVRY@fr.ibm.com" lastChat="1571991386957"/>
+      <user communityId="st0123456789" displayName="Mahjouba Azzaoui" id="AZZAOUI@fr.ibm.com" lastChat="1571324047055"/>
+      <user communityId="st0123456789" displayName="Berengere Promerat" id="berengere@fr.ibm.com" lastChat="1558365608392"/>
+      <user communityId="st0123456789" displayName="Nicolas Fouquet-Lapar" id="Nicolas_Fouquet-Lapar@fr.ibm.com" lastChat="1571919677001"/>
+      <user communityId="st0123456789" displayName="Jean-Luc Zamord" id="Jean-Luc.Zamord@ie.ibm.com" lastChat="1569833884079"/>
+      <user communityId="st0123456789" displayName="Florence Marcel" id="florence_marcel@fr.ibm.com" lastChat="1570798760671"/>
+    </group>
+    <group expanded="true" name="ChM6_MKT_TEC" type="private">
+      <user communityId="st0123456789" displayName="Jean-Christophe Puyon" id="PUYON@fr.ibm.com" lastChat="1560417882739"/>
+      <user communityId="st0123456789" displayName="Christine Wahart" id="WAHART@fr.ibm.com" lastChat="1571211466069"/>
+      <user communityId="st0123456789" displayName="Pascal Thery" id="pthery@fr.ibm.com" lastChat="1571227541798"/>
+      <user communityId="st0123456789" displayName="Sandrine Jezequel" id="sandrine_jezequel@fr.ibm.com" lastChat="1568811228886"/>
+      <user communityId="st0123456789" displayName="Magali Charbonnier" id="magali.charbonnier@fr.ibm.com" lastChat="1571840956958"/>
+      <user communityId="st0123456789" displayName="Ramona Boroianu" id="ramona.boroianu@ro.ibm.com" lastChat="1572005332312"/>
+      <user communityId="st0123456789" displayName="Isabelle Ulrich" id="Isabelle.Ulrich1@ibm.com" lastChat="1554392334641"/>
+      <user communityId="st0123456789" displayName="Gregory Tripp" id="Gregory.Tripp@ibm.com"/>
+    </group>
+  </contactList>
+</imClientConfig>

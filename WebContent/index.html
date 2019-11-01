@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Save Sametime Contacts</title>
+    <link rel="shortcut icon" href="img/watson.png" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.css">
+    <link rel="stylesheet" href="css/glyphicons.css">
+    <link rel="stylesheet" href="css/index.css">
+
+  </head>
+  <body>
+
+      <div id='ajax_loader' style="position: fixed; left: 50%; top: 50%; display: none;">
+        <img src="img/ajax-loader.gif" width="250%" height="250%"></img>
+      </div>
+
+      <div id="Loading"></div>
+      <div id="alert"></div>
+
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="https://cloud.ibm.com/login">
+          <img src="img/ibmcloud.png" class="d-inline-block align-top" alt="">
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="http://github.com/bpshparis"><strong>Save Sametime Contacts</strong></a>
+            </li>
+            <li class="nav-item">
+            </li>
+            <li class="nav-item">
+            </li>
+            <li class="nav-item">
+            </li>
+          </ul>
+          <span class="navbar-text">
+            <strong>Delivered by</strong>&nbsp;&nbsp;
+            <a class="navbar-brand" href="http://ibm.biz/eagparis">
+              <img src="img/eag.jpg" class="d-inline-block align-top" alt="EAG">
+            </a>
+          </span>
+
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <div class="form-group mx-sm-1 mb-2">
+              <a class="navbar-brand" href="">
+                <img src="img/eag.jpg" class="d-inline-block align-top" alt="">
+              </a>
+            </div>
+          </form> -->
+
+        </div>
+      </nav>
+
+			<div class="toolbar form-inline pull-right" id="mainToolbar">
+
+        <div class="form-group mx-sm-1 mb-2">
+          <button type="button" id="uploadFile" class="form-control btn btn-outline-dark btn-file gibtn" title="Upload Sametime contacts in XML.">
+            <span class="glyphicons glyphicons-upload" aria-hidden="true"></span><input type="file" accept=".xml" id="soundFile" name="soundFile">
+          </button>
+        </div>
+
+        <div class="form-group mx-sm-1 mb-2">
+          <button type="button" id="send" class="form-control btn btn-outline-dark gibtn" data-toggle="tooltip" data-placement="top" title="Process Sametime contacts."><span class="glyphicons glyphicons-cogwheels" aria-hidden="true"></span></button>
+        </div>
+
+        <div class="form-group mx-sm-1 mb-2">
+          <button type="button" id="save" class="form-control btn btn-outline-dark gibtn" data-toggle="tooltip" data-placement="top" title="Save Sametime contacts in CSV"><span class="glyphicons glyphicons-floppy-save" aria-hidden="true"></span></button>
+        </div>
+
+        <div class="form-group mx-sm-1 mb-2">
+          <button type="button" id="logout" class="form-control btn btn-outline-dark gibtn" data-toggle="tooltip" data-placement="top" title="Logout"><span class="glyphicons glyphicons-log-out" aria-hidden="true"></span></button>
+        </div>
+
+      </div>
+
+      <table id="answers" class="table table-striped table-bordered"></table>
+
+
+      <!-- dynamic modal -->
+  		<div class="modal fade" id="dynamicModal" tabindex="-1" role="dialog" aria-labelledby="dynamicModalLabel" data-keyboard="false" data-backdrop="static">
+  		  <div class="modal-dialog" role="document">
+  		    <div class="modal-content ">
+  		      <div class="modal-header">
+  		        <h4 class="modal-title" id="dynamicModalLabel"></h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+  		      </div>
+  		      <div class="modal-body">
+
+
+  		      </div>
+  		      <div class="modal-footer">
+  		      </div>
+  		    </div>
+  		  </div>
+  		</div>
+  		<!-- dynamic modal -->
+
+
+      <!-- logout modal -->
+  	  <div class="modal fade" id="modLogout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  	    <div class="modal-dialog" role="document">
+  	      <div class="modal-content">
+  	        <div class="modal-header">
+  	          <h4 class="modal-title" id="myModalLabel">Save Sametime Contacts</h4>
+  	        </div>
+  	        <div class="modal-body">
+
+  						<p><h5>Do you really want to exit ?</h5></p>
+
+  	        </div>
+  	        <div class="modal-footer">
+  						<form method="post" action='ibm_security_logout' name="logout_form">
+  							<INPUT TYPE="HIDDEN" name="logoutExitPage" VALUE="http://www.ibm.com">
+  							<input type="submit" class="btn btn-primary" name="logout" value="Exit">
+  							<button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+  	          </form>
+
+  	          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+  	        </div>
+  	      </div>
+  	    </div>
+  	  </div>
+  	  <!-- logout modal -->
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script> -->
+
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.12.1/bootstrap-table.min.js"></script>
+      <!-- <script src="js/bootstrap-table-fr-FR.js"></script> -->
+
+      <script src="js/bootstrap-list-filter.min.js"></script>
+      <script src="js/bootstrap-select.min.js"></script>
+
+      <script src="js/bootbox.min.js"></script>
+
+      <!-- <script src="js/RecordRTC.js"></script>
+    	<script src="js/recorderWorker.js"></script>
+    	<script src="js/audioRecord.js"></script>
+    	<script src="js/lame.all.js"></script> -->
+
+
+      <script src="js/filesaver.js"></script>
+      <script src="js/tableExport.min.js"></script>
+
+      <script src="js/index.js"></script>
+
+
+  </body>
+</html>
