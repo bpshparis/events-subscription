@@ -74,7 +74,7 @@ public class RecognizeAudioServlet extends HttpServlet {
 			String xml = (String) request.getSession().getAttribute("XML");
 			
 			if(xml == null) {
-	    		result.put("TROUBLESHOOTING", "Please upload Sametime Contacts in XML before processing.");
+	    		result.put("TROUBLESHOOTING", "Please upload Sametime contacts before processing.");
 	    		throw new Exception();
 			}
 			
@@ -114,7 +114,7 @@ public class RecognizeAudioServlet extends HttpServlet {
         		result.put("ANSWER", contacts);
         	}
         	else {
-        		result.put("TROUBLESHOOTING", "No contact found in XML.");
+        		result.put("TROUBLESHOOTING", "No contact found in provided file. Check you upload the correct file.");
         		throw new Exception();
         	}
 	        
