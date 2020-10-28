@@ -1,3 +1,12 @@
+var events = {
+  "Cloud   Pak   for Automation Overview": "",
+  "IBM   Blockchain value  proposition": "Learn  how  IBM can   help   you unlock the Blockchain  value for your business",
+  "IBM Hybrid Cloud": "The container platform for public, private and hybrid applications.",
+  "IBM   Blockchain Concepts": "Learn how IBM can help you  unlock  the Blockchain  value for your business",
+  "Introducing  Cloud Pak for Integration": "with an   IBM   Event Streams  (Kafka) focus"
+}
+
+
 var cogWheels = '<span class="glyphicons glyphicons-cogwheels x1" aria-hidden="true"></span>';
 var upload = '<span class="glyphicons glyphicons-upload x1" aria-hidden="true"></span>';
 var play = '<span class="glyphicons glyphicons-play x1" aria-hidden="true"></span>';
@@ -25,15 +34,27 @@ taCols.push(taRow1);
 
 $(document)
   .ready(function() {
-    buildTable(taCols);
-    // $('#uploadFile').shake();
-    $('#uploadFile').focus();
-    // var options = {"effect": "bounce", "duration": 5000};
-    $('#uploadFile').effect("bounce",{times:20,distance:50},5000);
+
+    loadEvents();
+
+    $('#firstName').focus();
 
     var msg = 'First step: upload Sametime Contacts by clicking ' + upload;
 
-    ShowAlert("Welcome to Save Sametimes Contacts.", msg, "alert-success", 15000);
+    ShowAlert("EAG Paris Events", "Welcome, please start filling up subscription form.", "alert-success", 5000);
+
+    var date_input=$('input[name="eventStartDate"]'); //our date input has the name "date"
+    var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+    var options={
+      format: 'mm/dd/yyyy',
+      container: container,
+      todayHighlight: true,
+      autoclose: true,
+    };
+    date_input.datepicker(options);
+
+
+
   })
   .ajaxStart(function(){
       $("div#Loading").addClass('show');
@@ -45,6 +66,159 @@ $(document)
 $('.modal').on('shown.bs.modal', function() {
   $(this).find('[autofocus]').focus();
 });
+
+function loadEvents(){
+
+  $.getJSON("res/events.json", function(events){
+
+    $('#eventName').empty();
+
+    $.each(Object(events), function(key, value){
+      var option = '<option class="fontsize" value="' + key + '" data-subtext="' + value + '">' + key + '</option>';
+      $('#eventName').append(option);
+    })
+    $('#eventName').selectpicker('refresh');
+  
+  })
+  .done(function( json ) {
+    // ShowAlert("loadLinks()", "Links list loaded successfully.", "alert-success");
+  })
+  .fail(function( jqxhr, textStatus, error ) {
+    var err = textStatus + ", " + error;
+    ShowAlert("Loading events list failed.", err, "alert-warning");
+  });
+}
+
+$("#subscribe").submit(function(e) {
+
+  //prevent Default functionality
+  e.preventDefault();
+
+  //get the action-url of the form
+  // var actionurl = e.currentTarget.action;
+
+  // var data = $("#subscribe :input").serializeArray();
+
+  // First name,Last name,E-mail address,Business phone,Company name,Notice and Choice: Email,Notice and Choice: Telephone,Event name,Event start date
+
+  var subscription = {};
+
+  var firstName = $("#firstName").val();
+  if(!firstName){
+    ShowAlert("", "Please fill First name input.", "alert-warning");
+    $('#firstName').focus();
+    return false;
+  }
+  subscription["firstName"] = firstName;
+
+  var lastName = $("#lastName").val();
+  if(!lastName){
+    ShowAlert("", "Please fill Last name input.", "alert-warning");
+    $('#lastName').focus();
+    return false;
+  }
+  subscription["lastName"] = lastName;
+
+  var emailAddress = $("#emailAddress").val();
+  if(!emailAddress){
+    ShowAlert("", "Please fill E-mail address input.", "alert-warning");
+    $('#emailAddress').focus();
+    return false;
+  }
+  subscription["emailAddress"] = emailAddress;
+
+  var businessPhone = $("#businessPhone").val();
+  // if(!businessPhone){
+  //   ShowAlert("", "Please fill Business phone input.", "alert-warning");
+  //   $('#businessPhone').focus();
+  //   return false;
+  // }
+  subscription["businessPhone"] = businessPhone;
+
+  var companyName = $("#companyName").val();
+  if(!companyName){
+    ShowAlert("", "Please fill Company name input.", "alert-warning");
+    $('#companyName').focus();
+    return false;
+  }
+  subscription["companyName"] = companyName;
+
+  var eventName = $("#eventName").val();
+  if(!eventName){
+    ShowAlert("", "Please fill Event name input.", "alert-warning");
+    $('#eventName').focus();
+    return false;
+  }
+  subscription["eventName"] = eventName.split(" - ")[0];
+
+  // var eventStartDate = $("#eventStartDate").val();
+  // if(!eventStartDate){
+  //   ShowAlert("", "Please fill Event start date input.", "alert-warning");
+  //   $('#eventStartDate').focus();
+  //   return false;
+  // }
+  subscription["eventStartDate"] = eventName.split(" - ")[1];
+
+  var emailChoice = $("#emailNotice").prop("checked");
+  subscription["emailChoice"] = emailChoice;
+  var phoneChoice = $("#phoneNotice").prop("checked");
+  subscription["phoneChoice"] = phoneChoice;
+
+  var parms = subscription;
+
+  console.log(JSON.stringify(parms));
+
+  $.ajax({
+    type: 'POST',
+    url: "Subscribe",
+    dataType: 'json',
+    data: JSON.stringify(parms),
+
+    success: function(data) {
+        console.log(data);
+        if(data.STATUS == "OK"){
+          ShowAlert("Thanks !", "Subscribtion was submitted successfull." , "alert-success");
+          $("#firstName").val("");
+          $("#lastName").val("");
+          $("#emailAddress").val("");
+          $("#businessPhone").val("");
+          $("#companyName").val("");
+          $('.selectpicker').selectpicker('val', '');
+          $(":checkbox").prop('checked', false)
+        }
+    },
+    error: function(data) {
+      ShowAlert("ERROR", "An unknown error occured and subscribtion have not been submited." , "alert-danger");
+    }
+
+  });
+
+});
+
+
+$("#test").click(function (){
+
+  $("#eventName").val($("#selectEventName").val());
+
+  console.log($("#eventName").val());
+
+  var form = document.getElementById("subscribe");
+      var inputs = form.getElementsByTagName("input"), input = null, flag = true;
+    console.log(inputs);
+      for(var i = 0, len = inputs.length; i < len; i++) {
+          input = inputs[i];
+          console.log(input);
+          if(!input.value) {
+              flag = false;
+              input.focus();
+              // alert("Please fill all the inputs");
+              ShowAlert("Please fill all the inputs.", "", "alert-warning");
+              break;
+          }
+      }
+      return(flag);
+
+})
 
 $('#save').click(function (){
   if($('#answers').bootstrapTable('getData').length == 0){
