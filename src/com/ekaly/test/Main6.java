@@ -60,7 +60,7 @@ public class Main6 {
     attachments.setContent(attachmentContent);
     mail.addAttachments(attachments);    
     
-    SendGrid sg = new SendGrid("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");
+    SendGrid sg = new SendGrid("");
     Request request = new Request();
     try {
       request.setMethod(Method.POST);

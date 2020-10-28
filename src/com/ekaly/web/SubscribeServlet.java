@@ -88,7 +88,7 @@ public class SubscribeServlet extends HttpServlet {
 	            attachments.setContent(attachmentContent);
 	            mail.addAttachments(attachments);    
 	            
-	            SendGrid sg = new SendGrid("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");
+	            SendGrid sg = new SendGrid("");
 	            Request sgRequest = new Request();
 	            sgRequest.setMethod(Method.POST);
 	            sgRequest.setEndpoint("mail/send");
