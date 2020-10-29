@@ -42,7 +42,7 @@ public class Main6 {
 
     System.out.println(String.join(System.getProperty("line.separator"), subscription.toCsv(",", true)));
     
-    Email from = new Email("iic_paris@fr.ibm.com");
+    Email from = new Email("sebastien.gautier@fr.ibm.com");
     
     
     Email to = new Email("baudelaine@gmail.com");

@@ -77,7 +77,7 @@ public class Subscription {
 		
 		StringBuffer sb = new StringBuffer();
 		sb.append(this.getCompanyName() + sep + this.getFirstName() + sep + this.getLastName() + sep +
-				this.getEmailAddress() + sep + this.getEventName() + sep + this.getEventStartDate() + sep +
+				this.getEmailAddress() + sep + this.getEventName() + " - " + this.getEventStartDate() + sep +
 				this.getBusinessPhone() + sep + this.isEmailChoice() + sep + this.isPhoneChoice());
 		
 		return sb.toString();
@@ -87,7 +87,7 @@ public class Subscription {
 		
 		List<String> result = new ArrayList<String>();
 		
-		String header = "Company name,First name,Last name,E-mail address,Event name,Event start date,Business phone,Email choice, Phone choice";
+		String header = "Company name,First name,Last name,E-mail address,Event name - Event start date,Business phone,Email choice, Phone choice";
 		header = header.replaceAll(",", sep);
 		result.add(header);
 		result.add(this.toCsv(sep));
