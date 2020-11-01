@@ -1,5 +1,13 @@
 @CHARSET "UTF-8";
 
+.form-group.required .col-form-label:after{
+   content: "*";
+   color: red;
+   position: absolute;
+   margin-left: 8px;
+   top:7px;   
+}
+
 .gibtn {
   padding: 1px 5px 5px 5px;
 }
